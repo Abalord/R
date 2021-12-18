@@ -1,1 +1,11 @@
-Teste papap
+import pandas as pd
+  
+df = pd.DataFrame(data)
+datatypes_per_column = {
+       "CNPJ": "string",
+       "DataFundacao": "datetime64[ms]",
+       "NatJuridica": "object",
+       "NumAlunos": "int64"
+       }
+  
+df = df.astype(datatypes_per_column)
